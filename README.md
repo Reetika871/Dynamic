@@ -1,59 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Team: SR
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1. Overview
 
-## About Laravel
+This project is a Dynamic Meal Planning System built with Laravel. It allows users to create recipes, plan meals by date, and view daily meal schedules. The system includes authentication, a dashboard, JavaScript-based interactions, and uses SQLite for easy setup.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+2. Features Implemented
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+User authentication (login and registration)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Recipe management (add, edit, delete, list recipes)
 
-## Learning Laravel
+Meal planning for specific dates
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Dashboard with daily summary
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+JavaScript for small UI interactions
 
-## Laravel Sponsors
+Automated tests included
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+SQLite database for simple and portable setup
 
-### Premium Partners
+3. Requirements
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+PHP 8.1 or newer
 
-## Contributing
+Composer
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Laravel 
 
-## Code of Conduct
+SQLite support
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Installation Instructions
 
-## Security Vulnerabilities
+Step 1: Extract the project
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Unzip the.zip archive to any folder.
 
-## License
+Step 2: Install dependencies
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Install Composer packages.
+
+Step 3: Create the environment file
+
+Copy the example environment file to create the .env file.
+
+Step 4: Generate the application key
+
+Generate the Laravel application key.
+
+5. Database Setup
+Option A: Using the included SQLite file
+
+If the archive includes a database file:
+
+Ensure the file database/database.sqlite is present.
+
+Update the .env file:
+
+Set the database connection to SQLite.
+
+Set the database path to the included SQLite file.
+
+No further setup is required.
+
+Option B: Creating a new SQLite database
+
+Create a new SQLite database file in the database folder.
+
+Update the .env file:
+
+Set the database connection to SQLite.
+
+Set the database path to the newly created file.
+
+Run database migrations.
+
+If seeders are included, run the database seeders afterward.
+
+6. Running the Application
+
+Start the Laravel development server.
+
+Open the application in a web browser at the default local URL.
+
+7. Example Login (Optional)
+
+If a demo user is included in the provided database, list the email and password here. Otherwise, this section can be left empty.
+
+8. Important Folders
+
+app/: Application logic, controllers, models
+
+resources/views/: Blade templates for the UI
+
+resources/js/: JavaScript used in the project
+
+routes/web.php: Application routes
+
+database/migrations/: Database structure
+
+tests/: Automated tests
+
+9. Running Tests
+
+Run the automated tests included in the tests folder.
+
+10. Why SQLite?
+
+SQLite is used because it requires no external installation, works immediately with Laravel, and is easy to share. The entire database is contained in a single file, making setup simple for anyone reviewing the project.
+
+11. Team Information
+
+Team SR
+All groups members completed the project together.
